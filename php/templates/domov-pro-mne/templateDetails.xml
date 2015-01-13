@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7.0" type="template">
+	<name>domov-pro-mne</name>
+	<creationDate>2012-05-21</creationDate>
+	<author>Domov pro mne</author>
+	<authorEmail>domov@domovpromne.cz</authorEmail>
+	<authorUrl>www.domovpromne.cz</authorUrl>
+	<copyright>Domov pro mne 2012</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>
+		<![CDATA[<span style="font-weight:bold;font-size:1.1em;color:#000">--- Domov pro mne 1.0 ---<br /><hr style="border:0;color:rgb(226,226,226);background-color:rgb(226,226,226);height:1px" />Domov pro mne Template - design by Domov pro mne<br />Position Layout:<br /></span>
+		<br />
+		<div style="border: 1px solid #c3c3c3;width:340px;overflow:auto;font-weight:normal;font-size:0.9em;background-color:#f8f8f8">
+
+			<div style="float:right;width:240px;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6">position-13 (topnav + search)</div>	
+			<div style="clear:both;width:328px;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6">position-1 (topmenu)</div>
+			<div style="clear:both;width:328px;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6">position-2 (top slider)</div>
+
+
+			<div style="float:left;width:262px;margin:0;padding:0">
+				<div style="float:left;width:262px;margin:0;padding:0">
+					<div style="border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6;width:254px;height:16px">position-12</div>
+				</div>
+				<div style="float:left;width:262px;margin:0;padding:0">
+					<div style="border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6;width:254px;height:160px">content (message/component)</div>
+				</div>
+			</div>
+
+			<div style="float:right;width:70px;margin:0;padding:0">
+
+				<div style="float:right;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6;width:60px;height:30px">position-7</div>
+				<div style="float:right;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6;width:60px;height:30px">position-4</div>
+				<div style="float:right;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6;width:60px;height:30px">position-5</div>				
+        <div style="float:right;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6;width:60px;height:30px">position-6</div>
+				<div style="float:right;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6;width:60px;height:30px">position-8</div>
+				<div style="float:right;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6;width:60px;height:30px">position-3</div>
+
+			</div>
+
+			<div style="clear:both;width:328px;border: 1px solid #c3c3c3;margin:2px;padding:3px;background-color:#e6e6e6">position-14 (footer)</div>
+
+		</div>
+		
+		]]>
+	</description>
+	<files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>		
+		<folder>language</folder>		
+		<filename>component.php</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<positions>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+	</positions>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_domov-pro-mne.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_domov-pro-mne.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="logoimage" type="list" default="1" label="TPL_DOMOV-PRO-MNE_FIELD_LOGOIMAGE_LABEL" description="TPL_DOMOV-PRO-MNE_FIELD_LOGOIMAGE_DESC">
+				    <option value="1">Show</option>
+				    <option value="0">Hide</option>
+			    </field>
+<field name="templatecolor" type="list" default="zelena"
+					label="TPL_DOMOV-PRO-MNE_TEMPLATECOLOR_LABEL"
+					description="TPL_DOMOV-PRO-MNE_TEMPLATECOLOR_DESC"
+					filter="word"
+				>
+
+					<option value="zelena">Zelena</option>
+					<option value="temno">Temno</option>
+					<option value="modra">Modra</option> 
+          <option value="zluta">Zluta</option>
+					<option value="azurova">Azurova</option>
+               
+
+				</field>
+				<field name="logo" type="media" default="" label="TPL_DOMOV-PRO-MNE_FIELD_LOGO_LABEL" description="TPL_DOMOV-PRO-MNE_FIELD_LOGO_DESC" />
+			</fieldset>
+		</fields>
+	</config>	
+	
+</extension>
